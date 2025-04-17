@@ -11,6 +11,8 @@ import { RegistrationForm } from "./Projects/Hooks/RegistrationForm"
 import { UseEffectReact } from "./Projects/Hooks/useEffect"
 import {PokemonCompo} from "./Projects/Hooks/useEffect/Project/index"
 import { UseRefReact } from "./Projects/Hooks/useRef/useRef"
+import { ForwordRefReact } from "./Projects/Hooks/useRef/forwordRef"
+import { UseId } from "./Projects/Hooks/useId"
 
 
 
@@ -25,8 +27,9 @@ const App1 = () => {
    //<></> you can also use this without import react and fragment 
 
     <Fragment> 
-
-<UseRefReact/>
+        <UseId/>
+      {/* <ForwordRefReact/> */}
+      {/* <UseRefReact/> */}
       {/* <Header/> */}
        {/* <Netflixseries/>  */}
        {/* calling componenet in html code */}
