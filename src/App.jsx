@@ -13,7 +13,10 @@ import {PokemonCompo} from "./Projects/Hooks/useEffect/Project/index"
 import { UseRefReact } from "./Projects/Hooks/useRef/useRef"
 import { ForwordRefReact } from "./Projects/Hooks/useRef/forwordRef"
 import { UseId } from "./Projects/Hooks/useId"
-
+// import { CreateContext } from "./Projects/Hooks/ContextApi/indext"
+import { Home } from "./Projects/Hooks/ContextApi/home"
+import { About } from "./Projects/Hooks/ContextApi/about"
+import { CreateContextProvider } from "./Projects/Hooks/ContextApi/indext"
 
 
 // "export const App1 = () =>" for named export
@@ -26,8 +29,13 @@ const App1 = () => {
    //<Rect.Fragment></Rect.Fragment>
    //<></> you can also use this without import react and fragment 
 
-    <Fragment> 
-        <UseId/>
+    <> 
+
+<CreateContextProvider>
+    <Home/>
+    <About/>
+</CreateContextProvider>
+        {/* <UseId/> */}
       {/* <ForwordRefReact/> */}
       {/* <UseRefReact/> */}
       {/* <Header/> */}
@@ -40,7 +48,7 @@ const App1 = () => {
       {/* <UseEffectReact/> */}
       {/* <PokemonCompo/> */}
 
-    </Fragment>   
+    </>   
 
   )
 }
