@@ -17,6 +17,8 @@ import { UseId } from "./Projects/Hooks/useId"
 import { Home } from "./Projects/Hooks/ContextApi/home"
 import { About } from "./Projects/Hooks/ContextApi/about"
 import { CreateContextProvider } from "./Projects/Hooks/ContextApi/indext"
+import { Theme } from "./Projects/DarkLightTheame/indext"
+import { UseReducer } from "./Projects/Hooks/useReducer/useReducer"
 
 
 // "export const App1 = () =>" for named export
@@ -31,10 +33,14 @@ const App1 = () => {
 
     <> 
 
+<UseReducer/>
+{/* 
 <CreateContextProvider>
     <Home/>
     <About/>
-</CreateContextProvider>
+</CreateContextProvider> */}
+
+{/* <Theme/> */}
         {/* <UseId/> */}
       {/* <ForwordRefReact/> */}
       {/* <UseRefReact/> */}

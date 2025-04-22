@@ -1,9 +1,8 @@
-import { useContext } from "react"
-import { CreateContext } from "./indext"
+import{ useCustomHook } from "./indext"
 
 export const Home = () =>{
 
-    const {name,age}=useContext(CreateContext);
+    const {name,age} = useCustomHook();
 
     return(
         <>

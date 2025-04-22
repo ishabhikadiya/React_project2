@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./ToggleSwitch.css";
+import ts from "./ToggleSwitch.module.css";
 import { IoIosSwitch } from "react-icons/io";
 
 
@@ -19,10 +19,11 @@ export const ToggleSwitch = () => {
   return (
     <>    
     <IoIosSwitch></IoIosSwitch>
-      <div className="toggle-switch" style={toggleBGColor} onClick={handleToggleSwitch}>
-        <div className={`switch ${isOn ? "on" : "off"}`}>
+      <div className={ts["toggle-switch"]} style={toggleBGColor} onClick={handleToggleSwitch}>
+        {/* Because of hyphen  */}
+        <div className={`${ts.switch} ${isOn ? ts.on : ts.off }`}>
 
-          <span className="switch-state">{isOn ? "on" : "off"}</span>
+          <span className={ts["switch-state"]}>{isOn ? "on" : "off"}</span>
 
         </div>
       </div>

@@ -1,4 +1,4 @@
-import { createContext } from "react"
+import { createContext, use } from "react"
  
 export const CreateContext = createContext();
 
@@ -15,4 +15,13 @@ export const CreateContextProvider = ({children}) => {
             </>
         )           
 
+}
+
+export const useCustomHook = () =>{
+
+    const context = use(CreateContext);
+
+    return (
+        context
+    );
 }
